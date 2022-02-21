@@ -15,7 +15,7 @@ public class CalculatorTest {
     @Test
     public void multiply() {
         cal = new Calculator();
-        assertEquals(5, cal.multiply(2,2));
+        assertEquals(4, cal.multiply(2,2));
 
         /*assertAll(() -> assertEquals(8, Calculator.multiply(2,2,2)),
                 () -> assertEquals(-4, Calculator.multiply(2, -2)),
