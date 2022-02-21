@@ -1,12 +1,15 @@
 import java.util.stream.DoubleStream;
 
 public class Calculator {
-
-    public double add(double... operands) {
-        return DoubleStream.of(operands).sum();
+    public static void main(String arg) {
+        System.out.println("Hello World!");
     }
 
-    public double multiply(double... operands) {
-        return DoubleStream.of(operands).reduce(1, (a, b) -> a * b);
+    public int add(int a, int b) {
+        return a + b;
+    }
+
+    public int multiply(int a, int b) {
+        return a * b;
     }
 }
