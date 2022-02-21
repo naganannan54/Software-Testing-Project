@@ -11,6 +11,7 @@ class CalculatorTest {
         assertEquals(4, Calculator.add(2,2));
         assertEquals(13, Calculator.add(2,2,9));
         assertEquals(1, Calculator.add(2,2,-3));
+        assertEquals(8, Calculator.add(3,5));
     }
 
     @Test
