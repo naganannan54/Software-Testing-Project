@@ -3,11 +3,11 @@ import org.junit.jupiter.api.Test;
 
 import static org.junit.jupiter.api.Assertions.*;
 
-class CalculatorTest {
+public class CalculatorTest {
 
     @Test
     @DisplayName("Add two numbers")
-    void add() {
+    public void add() {
         assertEquals(4, Calculator.add(2,2));
         assertEquals(13, Calculator.add(2,2,9));
         assertEquals(1, Calculator.add(2,2,-3));
@@ -16,7 +16,7 @@ class CalculatorTest {
 
     @Test
     @DisplayName("Multiply two numbers")
-    void multiply() {
+    public void multiply() {
         assertAll(() -> assertEquals(8, Calculator.multiply(2,2,2)),
                 () -> assertEquals(-4, Calculator.multiply(2, -2)),
                 () -> assertEquals(8, Calculator.multiply(-2,-4)),
