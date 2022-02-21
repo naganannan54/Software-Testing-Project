@@ -16,7 +16,7 @@ class CalculatorTest {
     void multiply() {
         assertAll(() -> assertEquals(4, Calculator.multiply(2,2)),
                 () -> assertEquals(-4, Calculator.multiply(2, -2)),
-                () -> assertEquals(9, Calculator.multiply(-3,-3)),
+                () -> assertEquals(8, Calculator.multiply(-2,-4)),
                 () -> assertEquals(0, Calculator.multiply(1,0)));
     }
 }
