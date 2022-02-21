@@ -1,5 +1,3 @@
-import java.util.stream.DoubleStream;
-
 public class Calculator {
     public static void main(String arg) {
         System.out.println("Hello World!");

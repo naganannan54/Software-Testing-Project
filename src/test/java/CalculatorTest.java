@@ -7,13 +7,19 @@ public class CalculatorTest {
     public Calculator cal;
 
     @Test
-    public void add() {
+    public void testCal() {
+        cal = new Calculator();
+        assertNotEquals(cal, null);
+    }
+
+    @Test
+    public void testAdd() {
         cal = new Calculator();
         assertEquals(4, cal.add(2,2));
     }
 
     @Test
-    public void multiply() {
+    public void testMultiply() {
         cal = new Calculator();
         assertEquals(4, cal.multiply(2,2));
 
