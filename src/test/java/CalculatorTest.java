@@ -56,7 +56,14 @@ public class CalculatorTest {
     @Test
     public void testDivide() {
         cal = new Calculator();
-        assertEquals();
+        assertEquals(2, cal.divide(4,2));
+        assertEquals(17, cal.divide(85,5));
+        assertEquals(44.5, cal.divide(89,2));
+        assertEquals(23, cal.divide(69,3));
+        assertNotEquals(10, caql.divide(30,5));
+        assertNotEquals(5, cal.divide(30,2));
+        assertNotEquals(76, cal.divide(10,5));
+        assertNotEquals(2, cal.divide(50,2));
 
 
 
@@ -65,4 +72,3 @@ public class CalculatorTest {
                 () -> assertEquals(8, Calculator.multiply(-2,-4)),
                 () -> assertEquals(0, Calculator.multiply(1,0)));*/
     }
-}
