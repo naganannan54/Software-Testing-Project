@@ -17,7 +17,10 @@ public class CalculatorTest {
         cal = new Calculator();
         assertEquals(0, cal.add(-2,2));
         assertEquals(6, cal.add(4,2));
-        assertEquals(9, cal.add(6,3));
+        assertEquals(8, cal.add(6,3));
+        assertNotEquals(-2, cal.add(4,-3));
+        assertNotEquals(5, cal.add(5, 0));
+        assertNotEquals(7, cal.add(3,4));
     }
 
     @Test
