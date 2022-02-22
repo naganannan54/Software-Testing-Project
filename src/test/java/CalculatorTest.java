@@ -28,15 +28,31 @@ public class CalculatorTest {
     @Test
     public void testMultiply() {
         cal = new Calculator();
-        assertEquals(4, cal.multiply(2,2));
-        assertEquals(-9, cal.multiply(-3,3));
-        assertEquals(15, cal.multiply(5,3));
-        assertEquals(1, cal.multiply(1,1));
-        assertEquals(0, cal.multiply(18977,0));
-        assertNotEquals(6, cal.multiply(2,2));
-        assertNotEquals(-9, cal.multiply(-3,-3));
-        assertNotEquals(0, cal.multiply(12,3));
-        assertNotEquals(5, cal.multiply(2,1));
+        assertEquals(4, cal.multiply(2, 2));
+        assertEquals(-9, cal.multiply(-3, 3));
+        assertEquals(15, cal.multiply(5, 3));
+        assertEquals(1, cal.multiply(1, 1));
+        assertEquals(0, cal.multiply(18977, 0));
+        assertNotEquals(6, cal.multiply(2, 2));
+        assertNotEquals(-9, cal.multiply(-3, -3));
+        assertNotEquals(0, cal.multiply(12, 3));
+        assertNotEquals(5, cal.multiply(2, 1));
+    }
+
+    @Test
+    public void testSubtract() {
+        cal = new Calculator();
+        assertEquals(2, cal.subtract(a:4, b:2));
+        assertEquals(3, cal.subtract(a:10, b:7));
+        assertEquals(10, cal.subtract(a:100, b:90));
+        assertEquals(-5, cal.subtract(a:-3, b:-2));
+        assertEquals(-25, cal.subtract(a:25, b:50));
+        assertNotEquals(10, cal.subtract(a:-3, b:2));
+        assertNotEquals(5, cal.subtract(a:5, b:2));
+        assertNotEquals(10, cal.subtract(a:100, b:75));
+        assertNotEquals(25, cal.subtract(a:25, b:25));
+
+
 
         /*assertAll(() -> assertEquals(8, Calculator.multiply(2,2,2)),
                 () -> assertEquals(-4, Calculator.multiply(2, -2)),
