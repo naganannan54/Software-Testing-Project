@@ -42,15 +42,15 @@ public class CalculatorTest {
     @Test
     public void testSubtract() {
         cal = new Calculator();
-        assertEquals(2, cal.subtract(a:4, b:2));
-        assertEquals(3, cal.subtract(a:10, b:7));
-        assertEquals(10, cal.subtract(a:100, b:90));
-        assertEquals(-5, cal.subtract(a:-3, b:-2));
-        assertEquals(-25, cal.subtract(a:25, b:50));
-        assertNotEquals(10, cal.subtract(a:-3, b:2));
-        assertNotEquals(5, cal.subtract(a:5, b:2));
-        assertNotEquals(10, cal.subtract(a:100, b:75));
-        assertNotEquals(25, cal.subtract(a:25, b:25));
+        assertEquals(2, cal.subtract(4, 2));
+        assertEquals(3, cal.subtract(10, 7));
+        assertEquals(10, cal.subtract(100, 90));
+        assertEquals(-5, cal.subtract(-3, -2));
+        assertEquals(-25, cal.subtract(25, 50));
+        assertNotEquals(10, cal.subtract(-3, 2));
+        assertNotEquals(5, cal.subtract(5, 2));
+        assertNotEquals(10, cal.subtract(100, 75));
+        assertNotEquals(25, cal.subtract(25,25));
 
 
 
