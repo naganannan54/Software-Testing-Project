@@ -29,6 +29,14 @@ public class CalculatorTest {
     public void testMultiply() {
         cal = new Calculator();
         assertEquals(4, cal.multiply(2,2));
+        assertEquals(-9, cal.multiply(-3,3));
+        assertEquals(15, cal.multiply(5,3));
+        assertEquals(1, cal.multiply(1,1));
+        assertEquals(0, cal.multiply(18977,0));
+        assertNotEquals(6, cal.multiply(2,2));
+        assertNotEquals(-9, cal.multiply(-3,-3));
+        assertNotEquals(0, cal.multiply(12,3));
+        assertNotEquals(5, cal.multiply(2,1));
 
         /*assertAll(() -> assertEquals(8, Calculator.multiply(2,2,2)),
                 () -> assertEquals(-4, Calculator.multiply(2, -2)),
