@@ -43,14 +43,20 @@ public class CalculatorTest {
     public void testSubtract() {
         cal = new Calculator();
         assertEquals(2, cal.subtract(4, 2));
-        assertEquals(3, cal.subtract(10, 7));
-        assertEquals(10, cal.subtract(100, 90));
-        assertEquals(-5, cal.subtract(-3, -2));
-        assertEquals(-25, cal.subtract(25, 50));
-        assertNotEquals(10, cal.subtract(-3, 2));
-        assertNotEquals(5, cal.subtract(5, 2));
-        assertNotEquals(10, cal.subtract(100, 75));
+        assertEquals(3, cal.subtract(10,7));
+        assertEquals(10, cal.subtract(100,90));
+        assertEquals(-1, cal.subtract(-3,-2));
+        assertEquals(-25, cal.subtract(25,50));
+        assertNotEquals(10, cal.subtract(-3,-2));
+        assertNotEquals(5, cal.subtract(5,2));
+        assertNotEquals(10, cal.subtract(100,75));
         assertNotEquals(25, cal.subtract(25,25));
+    }
+
+    @Test
+    public void testDivide() {
+        cal = new Calculator();
+        assertEquals();
 
 
 
