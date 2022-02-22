@@ -13,12 +13,6 @@ public class CalculatorTest {
     }
 
     @Test
-    public void testForRecording() {
-        cal = new Calculator();
-        assertEquals(4, cal.add(3,1));
-    }
-
-    @Test
     public void testAdd() {
         cal = new Calculator();
         assertEquals(0, cal.add(-2,2));
