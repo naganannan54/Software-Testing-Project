@@ -13,6 +13,12 @@ public class CalculatorTest {
     }
 
     @Test
+    public void testForRecording() {
+        cal = new Calculator();
+        assertEquals(4, cal.add(3,1));
+    }
+
+    @Test
     public void testAdd() {
         cal = new Calculator();
         assertEquals(0, cal.add(-2,2));
@@ -37,10 +43,5 @@ public class CalculatorTest {
         assertNotEquals(-9, cal.multiply(-3,-3));
         assertNotEquals(0, cal.multiply(12,3));
         assertNotEquals(5, cal.multiply(2,1));
-
-        /*assertAll(() -> assertEquals(8, Calculator.multiply(2,2,2)),
-                () -> assertEquals(-4, Calculator.multiply(2, -2)),
-                () -> assertEquals(8, Calculator.multiply(-2,-4)),
-                () -> assertEquals(0, Calculator.multiply(1,0)));*/
     }
 }
