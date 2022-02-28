@@ -58,7 +58,7 @@ public class CalculatorTest {
         cal = new Calculator();
         assertEquals(2, cal.divide(4, 2));
         assertEquals(17, cal.divide(85, 5));
-        assertEquals(44.5, cal.divide(89, 2));
+        assertEquals(45, cal.divide(90, 2));
         assertEquals(23, cal.divide(69, 3));
         assertNotEquals(10, cal.divide(30, 5));
         assertNotEquals(5, cal.divide(30, 2));
