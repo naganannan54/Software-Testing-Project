@@ -15,13 +15,6 @@ public class CalculatorTest {
     @Test
     public void testAdd() {
         cal = new Calculator();
-        assertEquals(4, cal.add(2,2));
-        assertEquals(6, cal.add(2,4));
-    }
-
-    /*@Test
-    public void testAdd() {
-        cal = new Calculator();
         assertEquals(0, cal.add(-2, 2));
         assertEquals(6, cal.add(4, 2));
         assertEquals(9, cal.add(6, 3));
@@ -58,9 +51,9 @@ public class CalculatorTest {
         assertNotEquals(5, cal.subtract(5, 2));
         assertNotEquals(10, cal.subtract(100, 75));
         assertNotEquals(25, cal.subtract(25, 25));
-    }*/
+    }
 
-    /*@Test
+    @Test
     public void testDivide() {
         cal = new Calculator();
         assertEquals(2, cal.divide(4, 2));
@@ -71,12 +64,5 @@ public class CalculatorTest {
         assertNotEquals(5, cal.divide(30, 2));
         assertNotEquals(76, cal.divide(10, 5));
         assertNotEquals(2, cal.divide(50, 2));
-    }*/
-
-
-        /*assertAll(() -> assertEquals(8, Calculator.multiply(2,2,2)),
-                () -> assertEquals(-4, Calculator.multiply(2, -2)),
-                () -> assertEquals(8, Calculator.multiply(-2,-4)),
-                () -> assertEquals(0, Calculator.multiply(1,0)));*/
-
+    }
 }
