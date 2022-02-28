@@ -15,7 +15,7 @@ public class CalculatorTest {
     @Test
     public void testAdd() {
         cal = new Calculator();
-        assertEquals(0, cal.add(-2, 2));
+        assertEquals(2, cal.add(1,1));
         assertEquals(6, cal.add(4, 2));
         assertEquals(9, cal.add(6, 3));
         assertEquals(-6, cal.add(-3, -3));
