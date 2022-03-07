@@ -65,4 +65,30 @@ public class CalculatorTest {
         assertNotEquals(76, cal.divide(10, 5));
         assertNotEquals(2, cal.divide(50, 2));
     }
+
+    @Test
+    public void testExponential() {
+        cal = new Calculator();
+        assertEquals(4, cal.exponential(2, 2));
+        assertEquals(9, cal.exponential(3, 2));
+        assertEquals(8, cal.exponential(2, 3));
+        assertEquals(16, cal.exponential(2, 4));
+        assertNotEquals(5, cal.exponential(2, 2));
+        assertNotEquals(7, cal.exponential(3, 2));
+        assertNotEquals(15, cal.exponential(2, 3));
+        assertNotEquals(30, cal.exponential(2, 4));
+    }
+
+    @Test
+    public void testModulo() {
+        cal = new Calculator();
+        assertEquals(0, cal.modulo(4, 2));
+        assertEquals(0, cal.modulo(8, 2));
+        assertEquals(1, cal.modulo(4, 3));
+        assertEquals(2, cal.modulo(8, 3));
+        assertNotEquals(1, cal.modulo(4, 2));
+        assertNotEquals(1, cal.modulo(8, 2));
+        assertNotEquals(0, cal.modulo(4, 3));
+        assertNotEquals(0, cal.modulo(8, 3));
+    }
 }
