@@ -21,4 +21,16 @@ public class IntegrationTest {
         assertNotEquals(10, cal.multiply(cal.add(5,6), cal.divide(4,2)));
         assertNotEquals(10, cal.divide(cal.multiply(12,3), cal.add(6,6)));
     }
+
+    @Test
+    public void testSubExpMod() {
+        cal = new Calculator();
+
+        assertEquals(3, cal.subtract(cal.divide(8, 2), cal.modulo(6,5)));
+        assertEquals(2, cal.divide(cal.modulo(11,3), cal.subtract(7,6)));
+        assertEquals(1, cal.modulo(cal.subtract(9, 4), cal.divide(24, 6)));
+        assertNotEquals(3, cal.subtract(cal.divide(7, 2), cal.modulo(9,5)));
+        assertNotEquals(2, cal.divide(cal.modulo(12,3), cal.subtract(7,3)));
+        assertNotEquals(0, cal.modulo(cal.subtract(9, 4), cal.divide(24, 6)));
+    }
 }
